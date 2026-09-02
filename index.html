@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomia Cochala</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#">
+                <img src="imagen/logo.png" alt="Logo de Gastronomia Cochala" width="80" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#eventos">Eventos</a>
+                    <a class="nav-link" href="#informacion">Informacion</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio" class="container py-5">
+        <h1>Gastronomia Cochala</h1>
+        <p id="informacion" class="lead">La gastronomia cochala representa la riqueza cultural y la variedad de sabores de Cochabamba. Entre sus preparaciones mas iconicas se encuentran el silpancho, elaborado con carne apanada, arroz, papa, huevo y ensalada, y el pique macho, una abundante combinacion de carne, salchicha, papa, cebolla, tomate y locoto.</p>
+
+        <table class="table table-borderless">
+            <tr>
+                <td class="text-center">
+                    <img src="imagen/Pique%20macho%20cochabambino.webp" alt="Pique macho cochabambino" width="400" height="300">
+                    <h2 class="h4 fw-semibold fst-italic mt-3">Pique macho</h2>
+                </td>
+                <td class="text-center">
+                    <img src="imagen/silpancho-cochabambino-con-salchichas_web.jpg.webp" alt="Silpancho cochabambino con salchichas" width="400" height="300">
+                    <h2 class="h4 fw-semibold fst-italic mt-3">Silpancho</h2>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer id="eventos" class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2026 Gastronomia Cochala</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
