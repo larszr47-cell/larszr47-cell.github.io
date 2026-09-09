@@ -3,48 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastronomia Cochala</title>
+    <meta name="description" content="Sabores, historias y encuentros de la gastronomia cochabambina.">
+    <title>Gastronomia Cochala | Sabores que cuentan historias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-    <header class="bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light container">
-            <a class="navbar-brand" href="#">
+<body class="pagina-inicio">
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg container py-3">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                 <img src="imagen/logo.PNG" alt="Logo de Gastronomia Cochala" width="80" class="img-fluid">
+                <span class="brand-name">Cochala<br><small>cocina con historia</small></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menuPrincipal">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                    <a class="nav-link" href="#eventos">Eventos</a>
-                    <a class="nav-link" href="#informacion">Informacion</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                    <a class="nav-link" href="informacion.html">Informacion</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main id="inicio" class="container py-5">
-        <h1>Gastronomia Cochala</h1>
-        <p id="informacion" class="lead">La gastronomia cochala representa la riqueza cultural y la variedad de sabores de Cochabamba. Entre sus preparaciones mas iconicas se encuentran el silpancho, elaborado con carne apanada, arroz, papa, huevo y ensalada, y el pique macho, una abundante combinacion de carne, salchicha, papa, cebolla, tomate y locoto.</p>
+    <main id="inicio">
+        <section class="hero container py-5">
+            <div class="hero-copy">
+                <p class="eyebrow">Desde el corazon de Cochabamba</p>
+                <h1>Una mesa llena de <em>identidad</em></h1>
+                <p class="hero-text">La gastronomia cochala se disfruta sin apuro: recetas abundantes, productos de valle y el encuentro de familias alrededor de una misma mesa.</p>
+                <a class="btn btn-primary" href="informacion.html">Conoce nuestra cocina <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div class="hero-note">
+                <span class="note-number">01</span>
+                <p>El valle ofrece maiz, papa, ají y hierbas frescas que convierten cada plato en una historia.</p>
+            </div>
+        </section>
 
-        <table class="table table-borderless">
-            <tr>
-                <td class="text-center">
-                    <img src="imagen/Pique%20macho%20cochabambino.webp" alt="Pique macho cochabambino" width="400" height="300">
-                    <h2 class="h4 fw-semibold fst-italic mt-3">Pique macho</h2>
-                </td>
-                <td class="text-center">
-                    <img src="imagen/silpancho-cochabambino-con-salchichas_web.jpg.webp" alt="Silpancho cochabambino con salchichas" width="400" height="300">
-                    <h2 class="h4 fw-semibold fst-italic mt-3">Silpancho</h2>
-                </td>
-            </tr>
-        </table>
+        <section class="intro-band">
+            <div class="container py-5">
+                <div class="section-heading">
+                    <p class="eyebrow">Nuestros imprescindibles</p>
+                    <h2>Dos platos, miles de recuerdos</h2>
+                </div>
+                <div class="row g-4 mt-1">
+                    <div class="col-md-6">
+                        <article class="dish-card">
+                            <img src="imagen/Pique%20macho%20cochabambino.webp" alt="Pique macho cochabambino" loading="lazy">
+                            <div class="dish-info"><span>Para compartir</span><h3>Pique macho</h3><p>Carne, salchicha, papa, cebolla, tomate y locoto en una mezcla generosa y festiva.</p></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="dish-card">
+                            <img src="imagen/silpancho-cochabambino-con-salchichas_web.jpg.webp" alt="Silpancho cochabambino con salchichas" loading="lazy">
+                            <div class="dish-info"><span>Un clasico valluno</span><h3>Silpancho</h3><p>Arroz, papa, carne apanada, huevo y una ensalada fresca que equilibra cada bocado.</p></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container story-section py-5">
+            <div>
+                <p class="eyebrow">Una cocina viva</p>
+                <h2>El sabor de Cochabamba tambien se conversa</h2>
+            </div>
+            <div>
+                <p>En los mercados, las picanterias y las cocinas familiares se conserva una memoria hecha de recetas. La comida cochala mezcla lo cotidiano con lo celebratorio: un almuerzo puede ser sencillo, pero nunca deja de ser un momento para reunirse.</p>
+                <a class="text-link" href="eventos.html">Mira lo que viene <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </section>
     </main>
 
-    <footer id="eventos" class="bg-dark text-white text-center py-4">
-        <p class="mb-0">&copy; 2026 Gastronomia Cochala</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div><strong>Gastronomia Cochala</strong><p>Sabores del valle, historias para compartir.</p></div>
+            <div class="footer-student"><span>Proyecto estudiantil</span><strong>Desarrollado por: Edwin Ivan Crespo Soliz</strong><p>Curso: Tecnico Medio II</p></div>
+            <p class="copyright">&copy; 2026</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
